@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções de Ativação - Nilton Jivago</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: auto; padding: 20px; line-height: 1.6; background-color: #f9f9f9; }
+    h1, h2 { color: #2c3e50; }
+    .funcao { border: 2px solid #ccc; padding: 15px; margin-bottom: 25px; background: white; border-radius: 8px; }
+    img { max-width: 100%; height: auto; display: block; margin: 15px 0; border-radius: 6px; }
+    .formula { font-family: monospace; background: #eee; padding: 8px; display: inline-block; border-radius: 4px; }
+    .direitos { font-size: 0.9em; color: #555; border-top: 1px solid #ccc; margin-top: 40px; padding-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Funções de Ativação Originais</h1>
+  <p>Este documento apresenta as funções de ativação idealizadas e desenvolvidas por <strong>Nilton Jivago</strong>, com propósito de melhorar o desempenho de redes neurais artificiais.</p>
+
+  <div class="funcao">
+    <h2>1. Hybrid Vortex Edge v2</h2>
+    <p>Comporta-se como um redemoinho: acelera nas bordas e suaviza ao se aproximar do centro, ajudando na convergência sem ultrapassagem.</p>
+    <div class="formula">f(x) = tanh(x) * (1 - exp(-|x|))</div>
+    <img src="notebooks/vortex_edge_grafico.png" alt="Gráfico da Vortex Edge v2">
+  </div>
+
+  <div class="funcao">
+    <h2>2. Atratora v3</h2>
+    <p>Curva com derivada sempre ativa e com comportamento suavemente direcionador ao centro, útil em problemas caóticos ou oscilantes.</p>
+    <div class="formula">f(x) = tanh(x) * (1 - exp(-x²))</div>
+    <img src="notebooks/atratora_v3_grafico.png" alt="Gráfico da Atratora v3">
+  </div>
+
+  <div class="funcao">
+    <h2>3. Híbrida x⁴ Escalada</h2>
+    <p>Curva suave derivada de x⁴, com transição controlada por tanh. Ideal para evitar explosões de gradientes e manter estabilidade.</p>
+    <div class="formula">f(x) = tanh(x⁴ / 10)</div>
+    <img src="notebooks/hibrida_x4_grafico.png" alt="Gráfico da Híbrida x⁴ Escalada">
+  </div>
+
+  <div class="direitos">
+    <strong>Direitos Autorais:</strong><br>
+    Todas as funções apresentadas aqui são criações originais de <strong>Nilton Jivago</strong>. Seu uso, redistribuição ou modificação requer autorização explícita do autor.<br>
+    © Nilton Jivago – Todos os direitos reservados – 2025.
+  </div>
+
+</body>
+</html>
