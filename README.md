@@ -8,9 +8,9 @@ Cada função foi desenhada para oferecer características como **suavidade**, *
 ## 📂 Funções incluídas
 
 1. `Hybrid Vortex Edge v2`
-2. `Tanh Escalada`
-3. `Atratora v3`
-4. `Híbrida x⁴ Escalada`
+2. `Atratora v3`
+3.  `Híbrida x⁴ Escalada`
+
 
 ---
 
